@@ -11,12 +11,26 @@ const Wrapper = styled.div`
 padding: 18px 26px;
 
 `;
+const Logo = styled.div`
+display: flex;
+align-items:center;
+gap: 5px;
+font-weight: bold;
+margin-bottom: 25px;
+`;
+const Img = styled.img`
+  height: 50px;
+
+`
 
 const Menu = () => {
   return (
     <Container>
       <Wrapper>
-        Items
+       <Logo>
+        <Img src="https://cdn.dribbble.com/userupload/2445208/file/original-36e8f98866a8475c749554b2e3cecf95.png?resize=400x0" />
+        MoTube
+       </Logo>
       </Wrapper>
     </Container>
   )
