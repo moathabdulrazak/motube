@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Menu from "./components/Menu.jsx";
 import Navbar from "./components/Navbar.jsx";
+import './App.css';
 
 const Container = styled.div`
 display: flex;
