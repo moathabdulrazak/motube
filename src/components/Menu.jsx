@@ -16,6 +16,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
+import { Link } from "react-router-dom";
 const Container = styled.div`
   flex: 1;
   background-color: ${({ theme }) => theme.bgLighter};
@@ -34,6 +35,7 @@ const Logo = styled.div`
   gap: 5px;
   font-weight: bold;
   margin-bottom: 25px;
+  text-decoration: none;
 `;
 
 const Img = styled.img`
@@ -84,8 +86,10 @@ const Menu = ({darkMode, setDarkMode}) => {
     <Container>
       <Wrapper>
         <Logo>
+          <Link to={'/'} >
           <Img src="https://cdn.dribbble.com/userupload/2445208/file/original-36e8f98866a8475c749554b2e3cecf95.png?resize=400x0" />
           MoTube
+          </Link> 
         </Logo>
         <Item>
           <HomeIcon />
