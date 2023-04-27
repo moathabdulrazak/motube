@@ -61,6 +61,9 @@ const Button = styled.button`
   font-weight: 500;
   margin-top: 10px;
   cursor: pointer;
+  display:flex;
+  align-items:center;
+  gap: 5px;
 `;
 
 const Menu = () => {
@@ -95,7 +98,7 @@ const Menu = () => {
         <Hr/>
         <Login>
           Sign in to like videos, comment and subscribe.
-          <Button>SIGN IN</Button>
+          <Button><AccountCircleOutlinedIcon/>SIGN IN</Button>
         </Login>
         <Hr/>
         <Item>
