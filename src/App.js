@@ -22,7 +22,50 @@ function App() {
       <Main>
         <Navbar />
         <Wrapper>
-          video cards
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
+         <h1>Test</h1>
         </Wrapper>
       </Main>
     </Container>

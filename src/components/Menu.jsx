@@ -21,6 +21,8 @@ const Container = styled.div`
   background-color: #202020;
   height: 100vh;
   color: white;
+  position:sticky;
+  top:0;
 `;
 const Wrapper = styled.div`
   padding: 18px 26px;
