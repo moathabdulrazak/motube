@@ -1,16 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import Menu from "./components/Menu.jsx";
+import Navbar from "./components/Navbar.jsx";
 
-const Container = styled.div`
+const Container = styled.div``;
 
-`
+const Main = styled.div``;
+
+const Wrapper = styled.div``;
 
 function App() {
   return (
-<Container>
-  {/* {Menu} */}
-  {/* {main} */}
-</Container>
+    <Container>
+      <Menu />
+      <Main>
+        <Navbar />
+        <Wrapper>
+          video cards
+        </Wrapper>
+      </Main>
+    </Container>
   );
 }
 
