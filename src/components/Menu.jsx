@@ -86,8 +86,8 @@ const Menu = ({darkMode, setDarkMode}) => {
     <Container>
       <Wrapper>
         <Logo>
-          <Link to={'/'} >
-          <Img src="https://cdn.dribbble.com/userupload/2445208/file/original-36e8f98866a8475c749554b2e3cecf95.png?resize=400x0" />
+        <Link to="/" style={{ textDecoration: "none", color: 'inherit' }}>
+          <Img src="" />
           MoTube
           </Link> 
         </Logo>
