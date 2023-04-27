@@ -114,6 +114,9 @@ const Menu = ({darkMode, setDarkMode}) => {
           <Button><AccountCircleOutlinedIcon/>SIGN IN</Button>
         </Login>
         <Hr/>
+        <Title>
+          Best of Mo tube
+        </Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music
