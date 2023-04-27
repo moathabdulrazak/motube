@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-
+import HomeIcon from '@mui/icons-material/Home';
 const Container = styled.div`
   flex:1;
   background-color: #202020;
@@ -23,6 +23,13 @@ const Img = styled.img`
 
 `
 
+const Item = styled.div`
+display: flex;
+align-items:center;
+gap: 20px;
+cursor: pointer;
+`;
+
 const Menu = () => {
   return (
     <Container>
@@ -31,6 +38,10 @@ const Menu = () => {
         <Img src="https://cdn.dribbble.com/userupload/2445208/file/original-36e8f98866a8475c749554b2e3cecf95.png?resize=400x0" />
         MoTube
        </Logo>
+       <Item>
+        <HomeIcon/>
+        Home
+       </Item>
       </Wrapper>
     </Container>
   )
