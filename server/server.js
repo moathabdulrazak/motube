@@ -2,6 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from 'dotenv'
 import usersRoutes from '../server/routes/users.route.js'
+import videosRoutes from '../server/routes/videos.route.js'
+import commentRoutes from '../server/routes/comments.route.js'
 
 const app = express()
 dotenv.config()
@@ -24,6 +26,8 @@ const connect = async () => {
 
 
 app.use('/api/users', usersRoutes)
+app.use('', videosRoutes )
+app.use('', commentRoutes)
 
 
 app.listen(8800, () => {
