@@ -5,7 +5,7 @@ import usersRoutes from '../server/routes/users.route.js'
 import videosRoutes from '../server/routes/videos.route.js'
 import commentRoutes from '../server/routes/comments.route.js'
 import authRoutes from '../server/routes/auth.route.js'
-
+import cookieParser from "cookie-parser";
 const app = express()
 dotenv.config()
 mongoose.set("strictQuery", true);
@@ -24,6 +24,7 @@ const connect = async () => {
     console.log(error);
   }
 };
+app.use(cookieParser())
 app.use(express.json())
 app.use('/api/auth', authRoutes)
 app.use('/api/users', usersRoutes)
