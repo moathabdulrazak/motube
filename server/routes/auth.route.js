@@ -1,5 +1,6 @@
 import  express from "express";
-import {} from '../controllers/comments.controller.js'
+import {} from '../controllers/auth.controller.js'
+
 const router = express.Router()
 
 
