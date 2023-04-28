@@ -26,7 +26,6 @@ export const signin = async (req, res, next) => {
 
     const token = jwt.sign({
       id: user._id,
-      isSeller: user.isSeller,
     }, process.env.JWT );
 
     // @ts-ignore
