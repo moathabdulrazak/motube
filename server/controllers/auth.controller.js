@@ -21,13 +21,17 @@ export const signin = async (req, res, next) => {
   try {
     const user = await User.findOne({ username: req.body.username });
     if (!user) return next(createError(404, "User not found!"));
+    // @ts-ignore
     const isCorrect = bcrypt.compareSync(req.body.password, user.password);
     if (!isCorrect) return next(createError(404, "Wrong password or username"));
 
     const token = jwt.sign({
       id: user._id,
+    // @ts-ignore
     }, process.env.JWT );
 
+
+    // Separates password from other details.
     // @ts-ignore
     const { password, ...info } = user._doc;
 
