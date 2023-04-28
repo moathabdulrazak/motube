@@ -1,5 +1,5 @@
 
 
-export const test = () => {
-  console.log("test is working.")
+export const fn = async  (req, res) => {
+
 }
