@@ -9,15 +9,15 @@ router.get('/find/:id',  getUser)
 // update a user
 router.put('/:id', verifyToken, updateUser)
 // delete a user
-router.delete('/:id', deleteUser)
+router.delete('/:id', verifyToken, deleteUser)
 // subscribe to a user
-router.put('/sub/:id', subscribe)
+router.put('/sub/:id', verifyToken, subscribe)
 // unsubscribe to a user
-router.put('/unsub/:id', unsubscribe)
+router.put('/unsub/:id', verifyToken, unsubscribe)
 // like a video
-router.put('/like/:videoId', like)
+router.put('/like/:videoId', verifyToken,  like)
 // dislike a video
-router.put('/dislike/:videoId', dislike)
+router.put('/dislike/:videoId', verifyToken, dislike)
 
 
 export default router
