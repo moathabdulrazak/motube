@@ -28,8 +28,8 @@ app.use(cookieParser())
 app.use(express.json())
 app.use('/api/auth', authRoutes)
 app.use('/api/users', usersRoutes)
-app.use('', videosRoutes )
-app.use('', commentRoutes)
+app.use('/api/videos', videosRoutes )
+app.use('/api/comments', commentRoutes)
 
 // Error handling to display to users.
 app.use((err, req, res, next ) => {
