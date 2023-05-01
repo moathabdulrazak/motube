@@ -6,6 +6,7 @@ import videosRoutes from '../server/routes/videos.route.js'
 import commentRoutes from '../server/routes/comments.route.js'
 import authRoutes from '../server/routes/auth.route.js'
 import cookieParser from "cookie-parser";
+import cors from "cors";
 const app = express()
 dotenv.config()
 mongoose.set("strictQuery", true);
@@ -24,6 +25,7 @@ const connect = async () => {
     console.log(error);
   }
 };
+app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(cookieParser())
 app.use(express.json())
 app.use('/api/auth', authRoutes)
