@@ -44,4 +44,4 @@ export const videoSlice = createSlice({
 export const { loginStart, loginSuccess, loginFailure, logout, subscription } =
   videoSlice.actions;
 
-export default userSlice.reducer;
+export default videoSlice.reducer;
