@@ -1,5 +1,6 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import userReducer from "./userSlice";
+import videoReducer from "./videoSlice.js";
 
 
 
@@ -8,5 +9,6 @@ import userReducer from "./userSlice";
 export const store = configureStore({
  reducer:{
   user: userReducer,
+  video: videoReducer,
  }
 })
